@@ -1,0 +1,57 @@
+/* universalselektor */
+* {
+    box-sizing: border-box; /* border inkluderas när t ex width anges. Vill ofta ha med denna*/
+}
+
+/* aanvända klass */
+.main-nav {
+
+    color: teal;
+}
+
+/* arvselektor */
+li a {
+    color: hotpink;
+}
+
+/* använda id */
+#selected-link {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* pseudoklass */
+li:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* pseudoklass */
+a:visited {
+    color: yellowgreen;
+}
+
+input[type="text"] {
+    background-color: cyan;
+    color: magenta;
+    border-color: yellow;
+}
+
+.container > ul {
+    color: hotpink;
+}
+
+/* first child */
+ul li:first-child {
+    color: blue;
+}
+
+ul li:last-child {
+    color: rebeccapurple;
+}
+
+/* adjacent sibling selector */
+ul + p {
+    font-style: italic;
+}
