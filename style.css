@@ -47,6 +47,7 @@ ul li:first-child {
     color: blue;
 }
 
+/* last child */
 ul li:last-child {
     color: rebeccapurple;
 }
@@ -54,4 +55,21 @@ ul li:last-child {
 /* adjacent sibling selector */
 ul + p {
     font-style: italic;
+}
+
+/* general sibling selector */
+ul ~ p {
+    border-color: blue;
+    border-width: 5px;
+}
+
+/* X:nth child(n) */
+li:nth-child(3) {
+    text-decoration: line-through;
+    color: black;
+}
+
+/* X:nth-of-type */
+main li:nth-of-type(2) {
+    border: 3px dotted blueviolet;
 }
